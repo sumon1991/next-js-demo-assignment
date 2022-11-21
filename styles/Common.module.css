@@ -1,0 +1,23 @@
+
+
+.image_container {
+    padding: 0 5px;
+}
+
+.social_container {
+    display: flex;
+    margin-right: 10px;
+}
+
+.social_container img{
+    width: 24px;
+}
+
+.profile_details {
+    display: flex;
+    margin-right: 10px;
+}
+
+.profile_details img{
+    width: 24px;
+}

@@ -1,0 +1,17 @@
+.navbar_container {
+  background: #fff;
+  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.navbar_items {
+  font-weight: 600;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.navbar_items li a{
+  color: #282c3f;
+}
