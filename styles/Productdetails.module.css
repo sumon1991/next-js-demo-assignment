@@ -1,0 +1,55 @@
+.product_image img{
+    width: 100%;
+}
+
+.product_description {
+    font-size: 14px;
+}
+
+.product_price {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.product_category {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.rating_star {
+    border-right: 1px solid #333;
+    color: #03a685;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.pdp_vatInfo {
+    color: #03a685;
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    margin: 5px 10px 10px 0;
+}
+
+.product_over_all_rating {
+    border-bottom: 1px solid #d4d5d9;
+    display: flex;
+    padding-bottom: 5px;
+    width: auto;
+}
+
+.product_over_all_rating .rating{
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.product_over_all_rating .rating_count{
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-left: 8px;
+}
+
+.button_space {
+    margin-right: 1rem;
+}

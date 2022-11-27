@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "./Image";
 import styles from '../styles/FashionAccessories.module.css'
+import Link from "next/link";
 
 export const getStaticProps = async () => {
     // API call
@@ -22,7 +23,10 @@ const FashionAccessories = (props) => {
                 <div className="col-md-3 col-12">
                     <div className={[styles.card_container, 'card', 'mb-3'].join(" ")}>
                         <div className={[styles.product_image].join(" ")}>
-                            <Image src={item.image} />
+                            
+                            <Link className="nav-link" href={`/fashionaccessories/` + item.id}>
+                                <Image src={item.image} />
+                            </Link>
                         </div>
                         <div className="card-body">
                             <h5 className={['card-title', styles.item_title].join(" ")}>{item.title}</h5>
