@@ -29,7 +29,9 @@ const Navbar = () => {
                 </ul>
                 <div className="d-flex">
                     <div className={commonstyle.profile_details}>
-                        <Image src="person.png" />
+                        <Link className="nav-link" href="/authentication/login">
+                            <Image src="person.png" />
+                        </Link>
                         <Image src="love.png" />
                         <Image src="shopping-bag.png" />
                     </div>
