@@ -11,7 +11,7 @@ export const getServerSideProps = async (context) => {
     // console.log('id - ', {id});
     const id = context.params.id
     // API call
-    const response = await fetch('https://fakestoreapi.com/products/'+id);
+    const response = await fetch(process.env.API_URL + '/products/'+id);
     const data = await response.json(); // convert stringified json to parsed json
     return {
         props: {productData: data}
