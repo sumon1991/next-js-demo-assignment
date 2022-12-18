@@ -3,6 +3,7 @@ import Image from "../Image";
 import Head from 'next/head';
 import styles from '../../styles/Login.module.css'
 import Link from "next/link";
+import axios from 'axios';
 
 export const getStaticProps = () => {
     return {

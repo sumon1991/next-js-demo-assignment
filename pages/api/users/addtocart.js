@@ -1,21 +1,20 @@
 import Users from "../../../models/Users";
+import Userscart from "../../../models/Userscart";
 import connectDB from "../../../middleware/mongoose";   
 
-// POST API
+// PUT API
 
 const handler = async (req, res) => {
 
 
-    if(req.method == 'POST') {
+    if(req.method == 'PUT') {
      console.log(req.body);
      try{
         
-        let temp = new Users({
-            userid: (parseInt(Math.random()*10000)).toString(),
-            name: req.body.name,
-            email: req.body.email,
-            mobile: req.body.mobile,
-            password: req.body.password
+        let temp = new Userscart({
+            userid: req.body.userid,
+            productid: req.body.productid,
+            purchased: false
         });
 
         const response = await temp.save();
@@ -29,11 +28,6 @@ const handler = async (req, res) => {
     } else {
      res.status(400).json({message: 'Method not allowed.'});
     }
- 
- //   const data = await products.find();
- //   res.status(200).json(data);
- 
- 
  
  }
  

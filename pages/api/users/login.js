@@ -13,7 +13,6 @@ const handler = async (req, res) => {
         let data = await Users.findOne({email: req.body.email});
         console.log(data);
         if(!data) {
-            alert('not found');
             res.status(400).json({message: 'User not found'});
         } else {
             if(Object.keys(data).length!=0) {
