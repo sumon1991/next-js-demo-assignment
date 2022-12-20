@@ -3,8 +3,8 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 // import Button from react-bootstrap;
 // import Image from "next/image";
-import Image from './Image' // instead of using the next js image structure we can use use our one
-
+// import Image from './Image' // instead of using the next js image structure we can use use our one
+import Image from './image'
 function Home() {
   return (
     // <div className={styles.container}>
