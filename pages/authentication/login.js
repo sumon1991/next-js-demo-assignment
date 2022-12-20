@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { useRouter } from "next/router";
 import axios from 'axios';
 // import Image from "../Image";
-import Image from "next/image";
+// import Image from "next/image";
+import Image from '../image';
 import Head from 'next/head';
 import styles from '../../styles/Login.module.css'
 import Link from "next/link";

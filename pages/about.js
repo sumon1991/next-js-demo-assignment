@@ -4,7 +4,8 @@ import Footer from "../common/Footer";
 import Navbar from "../common/Navbar";
 import styles from '../styles/About.module.css'
 // import Image from "./Image";
-import Image from "next/image";
+// import Image from "next/image";
+import Image from './image';
 import Head from 'next/head';
 
 export const getStaticProps = () => {
