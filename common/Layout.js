@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "./header";
-import Footer from "./footer";
-import Navbar from "./navbar";
+import Header from "./Header";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 const Layout = (props) => {
     const {children, footerstatus} = props;
