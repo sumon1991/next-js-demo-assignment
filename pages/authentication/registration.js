@@ -1,5 +1,6 @@
 import React from "react";
-import Image from "../Image";
+// import Image from "../Image";
+import Image from "next/image";
 import Head from 'next/head';
 import styles from '../../styles/Login.module.css'
 import Link from "next/link";

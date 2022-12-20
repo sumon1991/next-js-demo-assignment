@@ -1,6 +1,7 @@
 import React from "react";
 import commonstyle from '../styles/Common.module.css'
-import Image from "../pages/Image";
+// import Image from "../pages/Image";
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {

@@ -3,7 +3,8 @@ import Header from "../common/Header";
 import Footer from "../common/Footer";
 import Navbar from "../common/Navbar";
 import styles from '../styles/About.module.css'
-import Image from "./Image";
+// import Image from "./Image";
+import Image from "next/image";
 import Head from 'next/head';
 
 export const getStaticProps = () => {
