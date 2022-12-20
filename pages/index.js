@@ -2,8 +2,8 @@ import Head from 'next/head'
 // import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 // import Button from react-bootstrap;
-import Image from "next/image";
-// import Image from './Image' // instead of using the next js image structure we can use use our one
+// import Image from "next/image";
+import Image from './Image' // instead of using the next js image structure we can use use our one
 
 function Home() {
   return (
