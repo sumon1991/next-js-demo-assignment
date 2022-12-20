@@ -1,5 +1,6 @@
 import React from "react";
-import Image from "./Image";
+// import Image from "./Image";
+import Image from "next/image";
 import styles from '../styles/FashionAccessories.module.css'
 import Link from "next/link";
 
