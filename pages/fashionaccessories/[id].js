@@ -64,6 +64,7 @@ const FashionAccessoriesID = (props) => {
                     setSubmitStatus(true);
                 }
             } catch {
+                router.push('/authentication/login');
                 setSubmitStatus(true);
             }
         }
