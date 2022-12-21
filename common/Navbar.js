@@ -1,12 +1,23 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+import { useRouter } from "next/router";
 // import Image from "../pages/Image";
 // import Image from "next/image";
 import Image from '../pages/image';
-import styles from '../styles/Navbar.module.css'
-import commonstyle from '../styles/Common.module.css'
+import styles from '../styles/Navbar.module.css';
+import commonstyle from '../styles/Common.module.css';
 
 const Navbar = () => {
+    const router = useRouter();
+    let loginStatus = '';
+    const logoutFn = () => {
+        localStorage.clear();
+        router.reload();
+    };
+    useEffect(() => {
+        loginStatus = localStorage.getItem('loginStatus');
+        console.log(loginStatus);
+    });
     return (
         <div className={styles.navbar_container}>
             <nav className="navbar sticky-top navbar-expand-lg">
@@ -34,6 +45,7 @@ const Navbar = () => {
                         <Link className="nav-link" href="/authentication/login">
                             <Image src="person.png" />
                         </Link>
+                        {!loginStatus && (<button className="btn btn-sm" data-toggle="tooltip" data-placement="top" title="Logout" onClick={logoutFn}><Image src="logout.png" /></button>)}
                         <Image src="love.png" />
                         <Image src="shopping-bag.png" />
                     </div>
